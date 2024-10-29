@@ -21,6 +21,7 @@ mixin _$Product {
   double get price => throw _privateConstructorUsedError;
   String get image => throw _privateConstructorUsedError;
   double get rating => throw _privateConstructorUsedError;
+  String get proType => throw _privateConstructorUsedError;
   bool get isFavorite => throw _privateConstructorUsedError;
   bool get isPopular => throw _privateConstructorUsedError;
   String? get description => throw _privateConstructorUsedError;
@@ -46,6 +47,7 @@ abstract class $ProductCopyWith<$Res> {
       double price,
       String image,
       double rating,
+      String proType,
       bool isFavorite,
       bool isPopular,
       String? description,
@@ -74,6 +76,7 @@ class _$ProductCopyWithImpl<$Res, $Val extends Product>
     Object? price = null,
     Object? image = null,
     Object? rating = null,
+    Object? proType = null,
     Object? isFavorite = null,
     Object? isPopular = null,
     Object? description = freezed,
@@ -102,6 +105,10 @@ class _$ProductCopyWithImpl<$Res, $Val extends Product>
           ? _value.rating
           : rating // ignore: cast_nullable_to_non_nullable
               as double,
+      proType: null == proType
+          ? _value.proType
+          : proType // ignore: cast_nullable_to_non_nullable
+              as String,
       isFavorite: null == isFavorite
           ? _value.isFavorite
           : isFavorite // ignore: cast_nullable_to_non_nullable
@@ -143,6 +150,7 @@ abstract class _$$ProductImplCopyWith<$Res> implements $ProductCopyWith<$Res> {
       double price,
       String image,
       double rating,
+      String proType,
       bool isFavorite,
       bool isPopular,
       String? description,
@@ -169,6 +177,7 @@ class __$$ProductImplCopyWithImpl<$Res>
     Object? price = null,
     Object? image = null,
     Object? rating = null,
+    Object? proType = null,
     Object? isFavorite = null,
     Object? isPopular = null,
     Object? description = freezed,
@@ -197,6 +206,10 @@ class __$$ProductImplCopyWithImpl<$Res>
           ? _value.rating
           : rating // ignore: cast_nullable_to_non_nullable
               as double,
+      proType: null == proType
+          ? _value.proType
+          : proType // ignore: cast_nullable_to_non_nullable
+              as String,
       isFavorite: null == isFavorite
           ? _value.isFavorite
           : isFavorite // ignore: cast_nullable_to_non_nullable
@@ -234,6 +247,7 @@ class _$ProductImpl implements _Product {
       required this.price,
       required this.image,
       required this.rating,
+      required this.proType,
       this.isFavorite = false,
       this.isPopular = false,
       this.description,
@@ -253,6 +267,8 @@ class _$ProductImpl implements _Product {
   final String image;
   @override
   final double rating;
+  @override
+  final String proType;
   @override
   @JsonKey()
   final bool isFavorite;
@@ -287,7 +303,7 @@ class _$ProductImpl implements _Product {
 
   @override
   String toString() {
-    return 'Product(id: $id, title: $title, price: $price, image: $image, rating: $rating, isFavorite: $isFavorite, isPopular: $isPopular, description: $description, stock: $stock, categories: $categories, additionalImages: $additionalImages)';
+    return 'Product(id: $id, title: $title, price: $price, image: $image, rating: $rating, proType: $proType, isFavorite: $isFavorite, isPopular: $isPopular, description: $description, stock: $stock, categories: $categories, additionalImages: $additionalImages)';
   }
 
   @override
@@ -300,6 +316,7 @@ class _$ProductImpl implements _Product {
             (identical(other.price, price) || other.price == price) &&
             (identical(other.image, image) || other.image == image) &&
             (identical(other.rating, rating) || other.rating == rating) &&
+            (identical(other.proType, proType) || other.proType == proType) &&
             (identical(other.isFavorite, isFavorite) ||
                 other.isFavorite == isFavorite) &&
             (identical(other.isPopular, isPopular) ||
@@ -321,6 +338,7 @@ class _$ProductImpl implements _Product {
       price,
       image,
       rating,
+      proType,
       isFavorite,
       isPopular,
       description,
@@ -344,6 +362,7 @@ abstract class _Product implements Product {
       required final double price,
       required final String image,
       required final double rating,
+      required final String proType,
       final bool isFavorite,
       final bool isPopular,
       final String? description,
@@ -361,6 +380,8 @@ abstract class _Product implements Product {
   String get image;
   @override
   double get rating;
+  @override
+  String get proType;
   @override
   bool get isFavorite;
   @override

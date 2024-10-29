@@ -11,10 +11,39 @@ class ProductDataNotifier extends _$ProductDataNotifier {
   List<Product> build() => [
         const Product(
           id: '1',
-          title: 'Example Product',
+          title: 'Main Product',
           price: 99.99,
-          image: 'assets/images/product1.jpg',
+          image:
+              'https://www.aptronixindia.com/media/catalog/product/cache/31f0162e6f7d821d2237f39577122a8a/i/p/iphone_16_teal_pdp_image_position_1__en-in_1_6-removebg-preview.png',
           rating: 4.5,
+          proType: 'Phone',
+        ),
+        const Product(
+          id: '2',
+          title: 'new Product',
+          price: 99.99,
+          image:
+              'https://www.aptronixindia.com/media/catalog/product/cache/31f0162e6f7d821d2237f39577122a8a/i/p/iphone_16_teal_pdp_image_position_1__en-in_1_6-removebg-preview.png',
+          rating: 4.5,
+          proType: 'Mobiel',
+        ),
+        const Product(
+          id: '3',
+          title: 'Larg Product',
+          price: 99.99,
+          image:
+              'https://www.aptronixindia.com/media/catalog/product/cache/31f0162e6f7d821d2237f39577122a8a/i/p/iphone_16_teal_pdp_image_position_1__en-in_1_6-removebg-preview.png',
+          rating: 4.5,
+          proType: 'Mobiel',
+        ),
+        const Product(
+          id: '4',
+          title: 'L Product',
+          price: 99.99,
+          image:
+              'https://www.aptronixindia.com/media/catalog/product/cache/31f0162e6f7d821d2237f39577122a8a/i/p/iphone_16_teal_pdp_image_position_1__en-in_1_6-removebg-preview.png',
+          rating: 4.5,
+          proType: 'Mobiel',
         ),
       ];
 

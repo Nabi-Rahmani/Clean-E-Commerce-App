@@ -9,6 +9,7 @@ class Product with _$Product {
     required double price,
     required String image,
     required double rating,
+    required String proType,
     @Default(false) bool isFavorite,
     @Default(false) bool isPopular,
     String? description,
